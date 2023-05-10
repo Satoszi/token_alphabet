@@ -8,7 +8,7 @@ contract MyToken is ERC20 {
 
     constructor() ERC20("SimpleToken", "SMT") {
         _mint(msg.sender, 100000000 * 10 ** decimals());
-        marketingWallet = 0xf9610D78bf94E0c8CdaFBDf2420D468359cF825c;
+        marketingWallet = 0x...
         require(marketingWallet != address(0), "Invalid address");
     }
 
